@@ -11,7 +11,7 @@ class LLMClient:
         self._test_connection()
 
     def _validate_api_key(self):
-        openai_api_key = os.getenv('OPENAI_API_KEY')
+        openai_api_key = st.secrets['OPENAI_API_KEY']
         if not openai_api_key or not openai_api_key.startswith('sk-'):
             st.error("Invalid OpenAI API key configuration")
             st.stop()
