@@ -1,0 +1,7 @@
+streamlit
+streamlit_google_auth
+openai
+python-dotenv
+SQLAlchemy==1.4.0
+pysqlite3-binary
+
